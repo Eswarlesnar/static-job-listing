@@ -1,0 +1,11 @@
+.header{
+    width :100vw;
+    height :75px;
+    background : hsl(180, 29%, 50%); 
+}
+
+.header img {
+    min-width :100vw;
+    height :75px;
+    object-fit: cover; 
+}
