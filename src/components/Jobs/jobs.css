@@ -1,0 +1,83 @@
+.container {
+    margin-top :50px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap :30px;
+}
+
+.job{
+    width :80%;
+    height :120px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px hsl(180, 52%, 96%);
+    display : flex ; 
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.details {
+    margin-left : 30px; 
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap :20px;
+}
+
+.profile{
+    display : flex ; 
+    flex-direction: column;
+    gap :5px;
+    margin : 0;
+}
+
+
+.company-features h5{
+    margin : 0;
+    color :hsl(180, 29%, 50%);
+    font-weight :700;
+}
+
+.job-title{
+    margin :0;
+}
+
+.job-details{
+    display : flex ; 
+    gap :20px;
+}
+
+.job-details span {
+    color : hsla(180, 14%, 20%,0.7);
+    font-weight : 300;
+}
+
+.skills {
+    display : flex ;
+    justify-content: center;
+    gap : 10px;
+    flex-wrap: wrap;
+}
+
+.skill-button { 
+    height :30px ;
+    width :auto;
+    padding : 5px 10px;
+    border : none;
+    border-radius: 5px;
+    background :hsl(180, 31%, 95%);
+    outline : none ;
+    color :hsl(180, 29%, 50%);
+    font-weight :700;
+    cursor : pointer;
+}
+
+.skill-button:hover{
+    background-color: hsl(180, 29%, 50%);
+    color : white;
+}

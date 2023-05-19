@@ -1,15 +1,11 @@
-:root {
-
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+@import url("https://fonts.google.com/specimen/League+Spartan");
 
 body {
   margin: 0;
   padding :0;
   overflow-x: hidden;
+  background-color: hsl(180, 52%, 96%);
+  box-sizing: border-box;
+  font-family: 'League Spartan' sans-serif;
+ 
 }
