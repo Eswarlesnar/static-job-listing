@@ -1,9 +1,13 @@
 import { useContext } from "react"
-import { JobContextType , jobContext } from "../context/jobsContext"
+import { JobContextType , jobContext , JobType} from "../context/jobsContext"
 
-const Skills = (data:any) => {
+interface PropsType {
+    data :JobType
+}
+
+const Skills = (props : PropsType) => {
     const {setFilters , filters} = useContext(jobContext) as JobContextType
-    let skill = data.data
+    let skill = props.data
     const aggregatedSkillsArray = []
     aggregatedSkillsArray.push(skill.level)
     if(skill.languages.length > 0) { 

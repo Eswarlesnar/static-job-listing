@@ -1,9 +1,17 @@
-import insure from "../assets/insure.svg"
 
-const Details = (data :any) => {
-    const details  = data.data
+import { JobType } from "../context/jobsContext"
+
+interface PropsType {
+    data : JobType
+}
+
+const Details = (props : PropsType) => {
+    const details :JobType  = props.data
+    const splitArray = details.logo.split("/")
+    const length = splitArray.length
+    const imageURL = `./src/assets/${splitArray[length -1 ]}`
     return <div className="details">
-        <img className="logo" src = {insure} alt ="logo"/>
+        <img className="logo" src = {imageURL} alt ="logo"/>
         <div className= "profile">
             <div className = "company-features">
             <h5>{details.company}</h5>

@@ -51,7 +51,7 @@
 
 .job-details{
     display : flex ; 
-    gap :20px;
+    gap :15px;
 }
 
 .job-details span {
@@ -87,7 +87,7 @@
 
 @media screen and (max-width :500px) {
     .job{
-        min-height :250px;
+        min-height :230px;
         display : flex; 
         flex-direction: column;
         justify-items: start;
@@ -100,7 +100,7 @@
 
     .details{
         margin-left :0;
-        min-height : 160px;
+        min-height : 130px;
         margin-top :30px;
         height : 150px;
     }
@@ -130,7 +130,7 @@
 }
 
 
-@media screen and (max-width:300px) {
+@media screen and (max-width:375px) {
     .container{
         margin-top:180px;
     }
