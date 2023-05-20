@@ -11,11 +11,18 @@ const Details = (props : PropsType) => {
     const length = splitArray.length
     const imageURL = `/assets/${splitArray[length -1 ]}`
     const imgUrl = new URL(imageURL, import.meta.url).href
-    return <div className="details">
+
+    return <div className= { `details`}>
         <img className="logo" src = {imgUrl} alt ="logo" loading="lazy"/>
         <div className= "profile">
             <div className = "company-features">
-            <h5>{details.company}</h5>
+             <h4>{details.company}</h4>
+             {
+                details.new && <div className="new">New</div>
+             }
+             {
+                details.featured && <div className="featured"> featured</div>
+             }
             </div>
             <h3 className="job-title">{details.position}</h3>
             <div className="job-details">

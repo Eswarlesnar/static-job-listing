@@ -22,6 +22,10 @@
     
 }
 
+.job-border-left{
+    border-left: 4px solid hsl(180, 29%, 50%);
+}
+
 .details {
     margin-left : 30px; 
     display: grid;
@@ -31,15 +35,46 @@
     gap :20px;
 }
 
+
+
 .profile{
     display : flex ; 
     flex-direction: column;
-    gap :5px;
+    gap :10px;
     margin : 0;
 }
 
+.company-features{
+    display: flex;
+    gap :10px
+}
 
-.company-features h5{
+
+.company-features .new{
+    width : auto;
+    height : auto ;
+    padding : 2px 5px;
+    border-radius : 10px;
+    background :hsl(180, 29%, 50%);
+    color : white;
+    text-transform: uppercase;
+    font-size: smaller;
+    font-weight: 400;
+}
+
+.company-features .featured{
+    width : auto;
+    height : auto ;
+    padding : 2px 5px;
+    border-radius : 10px;
+    background :black;
+    color : white;
+    text-transform: uppercase;
+    font-size: smaller  ;
+    font-weight: 400;
+}
+
+.company-features h4{
     margin : 0;
     color :hsl(180, 29%, 50%);
     font-weight :700;
@@ -47,6 +82,8 @@
 
 .job-title{
     margin :0;
+    font-weight: 900;
+    font-size: larger;
 }
 
 .job-details{

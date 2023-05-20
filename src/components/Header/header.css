@@ -1,12 +1,12 @@
 .header{
     width :100vw;
-    height :75px;
+    height :125px;
     background : hsl(180, 29%, 50%); 
     position: relative;
 }
 
 .header img {
     min-width :100vw;
-    height :75px;
+    height :125px;
     object-fit: cover; 
 }
