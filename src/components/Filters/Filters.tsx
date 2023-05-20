@@ -19,6 +19,7 @@ const Filters : React.FC = () => {
    }
    return <div className="filters">
       <div className="filter">
+        <div className="active-filters">
         {
            filters?.map((item : string) => {
              return <div className="filter-tile">
@@ -27,6 +28,7 @@ const Filters : React.FC = () => {
             </div>
            })
         }
+        </div>
         <button className="clear-all-filters" onClick = {clearFilters}>Clear</button>
       </div>
    </div>
