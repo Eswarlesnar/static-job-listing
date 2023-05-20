@@ -9,9 +9,10 @@ const Details = (props : PropsType) => {
     const details :JobType  = props.data
     const splitArray = details.logo.split("/")
     const length = splitArray.length
-    const imageURL = `./src/assets/${splitArray[length -1 ]}`
+    const imageURL = `/assets/${splitArray[length -1 ]}`
+    const imgUrl = new URL(imageURL, import.meta.url).href
     return <div className="details">
-        <img className="logo" src = {imageURL} alt ="logo"/>
+        <img className="logo" src = {imgUrl} alt ="logo" loading="lazy"/>
         <div className= "profile">
             <div className = "company-features">
             <h5>{details.company}</h5>
@@ -23,5 +24,5 @@ const Details = (props : PropsType) => {
         </div>
     </div>
 }
-
+ 
 export default Details
